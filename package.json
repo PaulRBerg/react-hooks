@@ -1,0 +1,54 @@
+{
+  "name": "@paulrberg/react-hooks",
+  "description": "React Hooks to be shared across my personal projects and packages",
+  "version": "1.0.0",
+  "author": {
+    "name": "Paul Razvan Berg",
+    "url": "https://paulrberg.com"
+  },
+  "bugs": {
+    "url": "https://github.com/PaulRBerg/react-hooks/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@paulrberg/eslint-config": "^1.0.1",
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "fixpack": "^2.3.1",
+    "prettier": "^1.19.1",
+    "react": "^16.x",
+    "shx": "^0.3.2"
+  },
+  "files": [
+    "/lib"
+  ],
+  "homepage": "https://github.com/PaulRBerg/react-hooks#readme",
+  "license": "MIT",
+  "main": "./lib",
+  "peerDependencies": {
+    "react": "^16.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PaulRBerg/react-hooks.git"
+  },
+  "scripts": {
+    "build": "yarn clean && babel --config-file ./babel.config.js --copy-files --out-dir ./lib ./src",
+    "clean": "shx rm -rf ./lib",
+    "lint": "eslint --ignore-path .eslintignore .",
+    "prettier": "prettier --config .prettierrc --ignore-path .prettierignore --write '**/*.{js,json,jsx,md}'",
+    "watch": "yarn build --watch"
+  }
+}

@@ -1,0 +1,8 @@
+# folders
+node_modules
+/lib
+
+# files
+npm-error.log
+yarn-debug.log
+yarn-error.log
