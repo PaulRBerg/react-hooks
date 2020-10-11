@@ -32,7 +32,7 @@
     "/lib"
   ],
   "homepage": "https://github.com/PaulRBerg/react-hooks#readme",
-  "license": "MIT",
+  "license": "WTFPL",
   "main": "./lib",
   "peerDependencies": {
     "react": "^16.x"
